@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+	
+</head>
+
+<body>
+	<h1>Registrazione su Alcolisti pubblici</h1>
+	<div>
+		<label for="username"><span>Username: </span><strong><abbr title="Required">*</abbr></strong></label>
+		<input type="text" id="username" name="username" required/>
+    </div>
+	<div>
+		<label for="password"><span>Password: </span><strong><abbr title="Required">*</abbr></strong></label>
+		<input type="password" id="password" name="password" required/>
+	</div>
+		<h3>Anagrafica</h3>
+		<div>
+			<label for="d_nascita"><span>Data di Nascita: </span><strong><abbr title="Required">*</abbr></strong></label>
+			<input type="date" id="d_nascita" name="d_nascita" required/>
+		</div>
+		<div>
+			<label for="n_telefono"><span>Numero di Telefono: </span><strong><abbr title="Required">*</abbr></strong></label>
+			<input type="number" id="n_telefono" name="n_telefono" required/>
+		</div>
+			<h3>Piano</h3>
+			<div>
+				<label for="piano"><span>Scegli un piano: </span><strong><abbr title="Required">*</abbr></strong></label>
+				<select name="piano" id="piano">
+					<option value="free_drink">Free Drink</option>
+					<option value="d_sobrio">Sobrio</option>
+					<option value="d_brillo">Dignitosamente Brillo</option>
+					<option value="ubriaco">Ubriaco</option>
+				</select>
+			</div>
+			<br>
+			<fieldset>
+				<legend>ProLife</legend>
+				<div>
+					<input type="checkbox" id="yes" name="yes" value="yes"/>
+					<label for="yes">Si!</label>
+				</div>
+				<div>
+					<input type="checkbox" id="no" name="no" value="no"/>
+					<label for="no">No!</label>
+				</div>
+			  </fieldset>
+		<h3>Metodo di pagamento</h3>
+          	<label for="c_n"><span>Numero di Carta: </span><strong><abbr title="Required">*</abbr></strong></label> 
+			<input type="text" id="c_n" name="c_n" value="00000000000"/>
+			<br>
+			<label for="exp"><span>Scadenza: </span><strong><abbr title="Required">*</abbr></strong></label> 
+			<input type="month" id="exp" name="exp"/>
+			<br>
+			<label for="cvc"><span>CVC: </span><strong><abbr title="Required">*</abbr></strong></label> 
+			<input type="number" id="cvc" name="cvc" maxlength="3" placeholder="3 digits located on the back"/>
+			<br>
+			<label for="vl"><span>Indirizzo di fatturazione: </span><strong><abbr title="Required">*</abbr></strong></label> 
+			<input type="text" id="vl" name="vl"/>
+
+</body>
+
+</html>
